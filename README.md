@@ -76,7 +76,9 @@ VITE_AI_MODEL_KEY=your_ai_model_key
   
 
 🏗 **Project Structure**
+
 codegenius-ai/
+
 ├── src/
 │   ├── components/      # React components
 │   ├── hooks/          # Custom React hooks
@@ -85,6 +87,7 @@ codegenius-ai/
 │   └── main.tsx        # Application entry point
 ├── public/             # Static assets
 └── package.json        # Project configuration
+
 
 
  **Code Editor Settings** 
