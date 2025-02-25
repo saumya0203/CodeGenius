@@ -57,7 +57,7 @@ Ensure you have the following installed:
 - **npm** 9.0.0 or higher  
 
 ### Installation & Setup  
-To run this project locally:  
+To run this project locally:
 
 git clone https://github.com/saumya0203/CodeGenious.git
 cd CodeGenious
