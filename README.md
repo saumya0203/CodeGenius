@@ -16,8 +16,11 @@ CodeGenius AI is a playful and interactive AI-powered code editor that enables u
 To run this project locally:
 
 git clone https://github.com/saumya0203/CodeGenious.git
+
 cd CodeGenious
+
 npm install
+
 npm run dev
 Then, open http://localhost:3002 in your browser.
 
