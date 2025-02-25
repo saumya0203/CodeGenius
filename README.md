@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+**🚀 CodeGenius AI**
+CodeGenius AI is a playful and interactive AI-powered code editor that enables users to effortlessly write, execute, debug, and generate code.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**📌 Features**
+✅ Supports multiple programming languages (e.g., JavaScript, Python, etc.)
+✅ Run, Debug, and Test your code within the editor
+✅ AI-powered Code Generation and Analysis
+✅ Playful and intuitive UI design for an enhanced user experience
+✅ Code templates for quick development
 
-Currently, two official plugins are available:
+⚠ Known Issues
+🔴 Some buttons are not working properly due to incorrect API fetching
+🔴 Error handling needs improvement
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠 Installation & Setup
+To run this project locally:
 
-## Expanding the ESLint configuration
+git clone https://github.com/saumya0203/CodeGenious.git
+cd CodeGenious
+npm install
+npm run dev
+Then, open http://localhost:3002 in your browser.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+🎨** UI Contribution**
+The UI design has been enhanced to be more engaging and playful, ensuring a better coding experience.
 
-- Configure the top-level `parserOptions` property like this:
+**🛠 Tech Stack**
+Frontend: TypeScript, React, Tailwind CSS
+Code Execution & Debugging: Monaco API (for the editor) & Piston API (free and open-source execution engine)
+AI Code Generation: OpenAI & Ollama
+📌 Future Improvements
+🔹 Fix API fetching errors
+🔹 Improve error handling for code execution
+🔹 Enhance UI with better animations and accessibility
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+**🤝 Contributing**
+Contributions are welcome! Feel free to fork the repo, create a new branch, and submit a pull request.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+🚀 Happy Coding!
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
