@@ -1,43 +1,74 @@
-**🚀 CodeGenius AI**
-CodeGenius AI is a playful and interactive AI-powered code editor that enables users to effortlessly write, execute, debug, and generate code.
+# 🚀 CodeGenius AI
 
-**📌 Features**
-✅ Supports multiple programming languages (e.g., JavaScript, Python, etc.)
-✅ Run, Debug, and Test your code within the editor
-✅ AI-powered Code Generation and Analysis
-✅ Playful and intuitive UI design for an enhanced user experience
-✅ Code templates for quick development
+**CodeGenius AI** is a playful and interactive AI-powered code editor that enables users to effortlessly write, execute, debug, and generate code.
 
-⚠ Known Issues
-🔴 Some buttons are not working properly due to incorrect API fetching
-🔴 Error handling needs improvement
+---
 
-🛠 Installation & Setup
-To run this project locally:
+## 📌 Features
 
+✅ **Multi-Language Support**: Supports multiple programming languages (e.g., JavaScript, Python, etc.)  
+✅ **Code Execution & Debugging**: Run, debug, and test your code directly within the editor  
+✅ **AI-Powered Assistance**: AI-driven code generation and analysis for enhanced productivity  
+✅ **Intuitive UI**: A playful and user-friendly design for a seamless coding experience  
+✅ **Pre-built Code Templates**: Accelerate development with ready-to-use code snippets  
+
+---
+
+## ⚠ Known Issues
+
+🔴 Some buttons may not function properly due to incorrect API fetching  
+🔴 Error handling requires improvement for better user experience  
+
+---
+
+## 🛠 Installation & Setup
+
+To run this project locally, follow these steps:
+
+```sh
 git clone https://github.com/saumya0203/CodeGenius.git
-
 cd CodeGenius
-
 npm install
-
 npm run dev
-Then, open http://localhost:3002 in your browser.
+```
 
-🎨** UI Contribution**
-The UI design has been enhanced to be more engaging and playful, ensuring a better coding experience.
+Then, open [http://localhost:3002](http://localhost:3002) in your browser.
 
-**🛠 Tech Stack**
-Frontend: TypeScript, React, Tailwind CSS
-Code Execution & Debugging: Monaco API (for the editor) & Piston API (free and open-source execution engine)
-AI Code Generation: OpenAI & Ollama
-📌 Future Improvements
-🔹 Fix API fetching errors
-🔹 Improve error handling for code execution
-🔹 Enhance UI with better animations and accessibility
+---
 
-**🤝 Contributing**
-Contributions are welcome! Feel free to fork the repo, create a new branch, and submit a pull request.
+## 🎨 UI Enhancements
 
-🚀 Happy Coding!
+The UI has been carefully designed to be more engaging and interactive, ensuring an improved coding experience.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: TypeScript, React, Tailwind CSS  
+- **Code Execution & Debugging**: Monaco API (for the editor) & Piston API (open-source execution engine)  
+- **AI Code Generation**: OpenAI & Ollama  
+
+---
+
+## 📌 Future Improvements
+
+🔹 Fix API fetching errors for smoother functionality  
+🔹 Enhance error handling for better code execution feedback  
+🔹 Improve UI with better animations and accessibility features  
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Follow these steps to contribute:
+
+1. Fork the repository  
+2. Create a new branch (`git checkout -b feature-branch`)  
+3. Make your changes and commit (`git commit -m 'Add new feature'`)  
+4. Push to your branch (`git push origin feature-branch`)  
+5. Open a Pull Request  
+
+---
+
+🚀 **Happy Coding!**
 
