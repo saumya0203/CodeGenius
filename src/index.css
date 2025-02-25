@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply antialiased h-full overflow-hidden;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  #root {
+    @apply h-full;
+  }
+}
+
+.code-font {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* 3D Effects */
+.button-3d {
+  transform: translateY(0);
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06),
+              0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.button-3d:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15),
+              0 3px 6px -1px rgba(0, 0, 0, 0.1),
+              0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+}
+
+.button-3d:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1),
+              0 1px 2px -1px rgba(0, 0, 0, 0.06),
+              0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.panel-3d {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.editor-3d {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 8px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
+
+/* Code editor theme overrides */
+.prism-editor__textarea:focus {
+  outline: none !important;
+}
+
+.prism-editor__container {
+  min-height: 100% !important;
+  height: 100% !important;
+}
+
+.prism-editor__textarea,
+.prism-editor__editor {
+  min-height: 100% !important;
+  height: 100% !important;
+  overflow: auto !important;
+}
+
+/* Token colors */
+.token.comment {
+  color: #6b7280 !important;
+}
+
+.token.string {
+  color: #10B981 !important;
+}
+
+.token.number {
+  color: #F59E0B !important;
+}
+
+.token.keyword {
+  color: #8B5CF6 !important;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
